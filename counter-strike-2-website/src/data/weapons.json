@@ -1,0 +1,52 @@
+{
+  "weapons": [
+    {
+      "name": "AK-47",
+      "type": "Assault Rifle",
+      "damage": 36,
+      "rate_of_fire": 600,
+      "magazine_size": 30,
+      "description": "A powerful assault rifle known for its high damage and accuracy."
+    },
+    {
+      "name": "M4A4",
+      "type": "Assault Rifle",
+      "damage": 29,
+      "rate_of_fire": 666,
+      "magazine_size": 30,
+      "description": "A versatile assault rifle favored for its balance of power and accuracy."
+    },
+    {
+      "name": "AWP",
+      "type": "Sniper Rifle",
+      "damage": 115,
+      "rate_of_fire": 41,
+      "magazine_size": 10,
+      "description": "A high-damage sniper rifle capable of killing an enemy with a single shot."
+    },
+    {
+      "name": "Desert Eagle",
+      "type": "Pistol",
+      "damage": 63,
+      "rate_of_fire": 300,
+      "magazine_size": 7,
+      "description": "A powerful handgun known for its stopping power and accuracy."
+    },
+    {
+      "name": "MP5",
+      "type": "Submachine Gun",
+      "damage": 23,
+      "rate_of_fire": 800,
+      "magazine_size": 30,
+      "description": "A compact submachine gun that excels in close-quarters combat."
+    },
+    {
+      "name": "M249",
+      "type": "Light Machine Gun",
+      "damage": 28,
+      "rate_of_fire": 750,
+      "magazine_size": 100,
+      "description": "A light machine gun with a large magazine, ideal for suppressive fire."
+    }
+  ]
+}

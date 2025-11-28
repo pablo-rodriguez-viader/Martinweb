@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas - Counter Strike 2</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Aquí se incluirá el contenido del archivo header.html -->
+    </header>
+
+    <main>
+        <h1>Armas en Counter Strike 2</h1>
+        <div id="weapons-list">
+            <!-- Aquí se mostrará la lista de armas -->
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- Aquí se incluirá el contenido del archivo footer.html -->
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        fetch('../data/weapons.json')
+            .then(response => response.json())
+            .then(data => {
+                const weaponsList = document.getElementById('weapons-list');
+                data.forEach(weapon => {
+                    const weaponItem = document.createElement('div');
+                    weaponItem.classList.add('weapon-item');
+                    weaponItem.innerHTML = `<h2>${weapon.name}</h2><p>${weapon.description}</p>`;
+                    weaponsList.appendChild(weaponItem);
+                });
+            })
+            .catch(error => console.error('Error al cargar las armas:', error));
+    </script>
+</body>
+</html>
